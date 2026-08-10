@@ -6,7 +6,6 @@ import streamlit as st
 st.set_page_config(page_title="Multiple Disease Prediction", layout="wide", page_icon="⚕️")
 
 # Loading the saved models
-# Ensure these .sav files are in the same directory as your script
 diabetes_model = pickle.load(open('diabetes_trained_model.sav', 'rb'))
 heart_model = pickle.load(open('heart_disease_trained_model.sav', 'rb'))
 parkinsons_model = pickle.load(open('Parkinsson_disease_trained_model.sav', 'rb'))
